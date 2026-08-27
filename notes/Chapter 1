@@ -92,3 +92,39 @@ false === (x>y)             // => true: false is equal to false
 (x>3) || (y<3)                // => false: neither condition is true -- "||" is "or"
 !(x===y)                     // => true: "!" inverts a bolean value -- "!" is "not"
 
+//Functions are parameterized blocks of JavaScript code that we can invoke.
+function plus1(x){              // Define a function named "plus 1" with a parameter named "x"
+    return x+1;                 // Return a value one larger than the parameter value.
+}                               //Functions are enclosed in curles braces
+
+plus1(y)                        //=> 4: y is 3, so this invocations returns 3+1
+
+let square = finction (x) {    //Fucntions are values and can be assigned to variables.
+    return x * x;              //Compute the fucntion's value.
+};                             // Semicolon marks the end of the assignment.
+
+square(plus1(y))               // => 16: plus1(y) is 4, and 4*4 is 16
+
+
+//Arrow functions are a more concise way to write functions:
+const plus1 = x => x+1;          // A function with one parameter and a single expression.
+const square = x =>  x*x;         // The input x maps to the output x*x
+plus1(y)                          // => 4: plus1(y) is 4
+square(plus1(y))                 // => 16: plus1(y) is 4, and 4*4 is 16
+
+//When we use functions with objects, we get methods. A method is a function that is stored as an object property.
+//All JavaScript objects (including arrays) have methods:
+let a=[];                           // Create an empty array
+a.push(1,2,3);                     // The Push() method adds elements to the end of an array.
+a.reverse();                       // Another Method: reverse the order of the elements in the array.
+
+//We can define our own methods, too. The "this" keyword refers to the object on which the method is defined: in this case the points array from earlier.
+points.dist = function() {         // Define a method named to compute distance between points.
+    let p1 = this[0];              // First element of array we're invoked on.
+    let p2 = this[1];             // Second element of the "this" object.
+    let a = p2.x - p1.x;          // Difference in x coordinates.
+    let b = p2.y - p1.y;          // Difference in y coordinates.
+    return Math.sqrt(a*a + b*b);  // The distance is the square root of the sum of the squares.
+};
+points.dist()                     // => 5: Compute the distance between the two points.
+
