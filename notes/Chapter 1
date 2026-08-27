@@ -24,7 +24,7 @@ x = undefined;          // undefined is another special value like null.
 //An object is a collect of name/vlaue pairs, or a string to value map.
 let book ={             // Objects are incloised in curly braces
     topic:"JavaScript"  // The property "topic" has value "JavaScript".
-    edition:7           // The property "edition" has value 7
+    edition: 7           // The property "edition" has value 7
 };                      // The curly brace marks the end of the object.
 
 //Access the properties of an object with "." or "[]":
@@ -55,3 +55,40 @@ let data ={                // An object witrh two propertie4s
     trial1:[[1,2], [3,4]], // The value of each property is an array
     trial2: [[2,3],[4,5]]  // The elements of the arrayus are arrays
 }:
+
+//Operators act on values (the operands) toi produce a new value.
+//Arithmetic operators are some of the simplest:
+3+2;    // => 5: addition
+3-2;    // => 1: subtraction
+3*2;   // => 6: multiplication
+3/2;   // => 1.5: division
+3%2;   // => 1: remainder
+points [1].x - points[0].x // => 1: subtraction of object properties
+"3" + "2" // => "32": string concatenation
+
+//Javascript defines some shorthand arithmetic operators:
+let count = 0;              //Define a variable
+count++;                    // Increment the variable
+count--;                    // Devcrement the variable
+count+= 2;                  // Add 2: same as the count = count + 2;
+count *= 3;                 // Multiply by 3: same as count = count * 3;
+count                       // => 6: variable names are expressions, too.
+
+//Equality and relational operators test whether two values are equal.
+// Unequal, less than, greater than, and so on. They evaluate to true or false.
+let x =2,y=3;               // These = signs are assignment, not equality tests.
+x===y                       // => false: x is not equal to y
+x!==y                       // => true: x is not equal to y
+x<y                         // => true: x is less than y
+x<=y                        // => true: x is less than or equal to y
+x>y                         // => false: x is not greater than y
+x>=y                        // => false: x is not greater than or equal to y
+"two"==="three"             // => false: two is not equal to three
+"two">"three"               // => true: "tw" is alphabetically greater than "th"
+false === (x>y)             // => true: false is equal to false
+
+//logical operatoirs combine or invert boolean values:
+(x===2) && (y===3)         // => true: both conditions are true -- "&&" is "and"
+(x>3) || (y<3)                // => false: neither condition is true -- "||" is "or"
+!(x===y)                     // => true: "!" inverts a bolean value -- "!" is "not"
+
