@@ -1,0 +1,57 @@
+// Anything following double slashes is a comment
+
+//A Variable is a symbolic name for a Value.
+//Variables are delcared with the keyword "let"
+let x;              // delcare a variable named x.
+
+//Values can be assigned to variables with a "=" sign
+x=0;                //Now the variable x has the vlaue 0
+x                   //=> 0: A variable evaluates to its value.
+
+//Javascript supports several types of values
+
+x = 1;                  // Numbers
+x = 0.01;               // Numbers can be integers or reals.
+x = "Hello World";      // Strings of of text in quotation marks.
+x = 'JavaScript';       // Single quote marks do the same thing.
+x = true;               // A boolean value.
+x = false;              // Another boolean value.
+x = null;               // Null means no value.
+x = undefined;          // undefined is another special value like null.
+
+
+//Javascript's most important data type is the object.
+//An object is a collect of name/vlaue pairs, or a string to value map.
+let book ={             // Objects are incloised in curly braces
+    topic:"JavaScript"  // The property "topic" has value "JavaScript".
+    edition:7           // The property "edition" has value 7
+};                      // The curly brace marks the end of the object.
+
+//Access the properties of an object with "." or "[]":
+book.topic              // => "JavaScript"
+book["edition"]         // => 7: another way to access property values
+book.author="Flanagan"; //Create a new property by assignment.
+book.contents = {};     // {} is an empty obnject with no properties
+
+// Conditionall access properties with "?".
+book.contents?.ch01?.sect1 // => undefined: book.contents has no ch01 property.
+
+//Javascript also supports arrays (numerically indexed lists) of values:
+let primes =[2,3,5,7]; // An array of 4 values, delimited with [ and ].
+primes[0]              // =>: the first element (index 0) of the array (0 is first)
+primes.length          // => 4: how many elements in the array.
+primes[primes.length-1] //=> 7: the last element of the array.
+primes[4] = 9;          //Add a new element by assignment.
+primes [4] = 11;        //Or alter an existing element by assignment.
+let empty [];           //[] is an empty array with no elements.
+empty.length            // => 0
+
+//Arrays  and objects can hold other arrays and objects:
+let points [            //An array with two elements.
+    {x: 0, y: 0},       // Each element is an object.
+    {x: 1, y: 1}
+];
+let data ={                // An object witrh two propertie4s
+    trial1:[[1,2], [3,4]], // The value of each property is an array
+    trial2: [[2,3],[4,5]]  // The elements of the arrayus are arrays
+}:
