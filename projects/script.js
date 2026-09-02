@@ -1,1 +1,1 @@
-console.log("Hello! My JavaScript is working!");
+console.log("\u{F600}");

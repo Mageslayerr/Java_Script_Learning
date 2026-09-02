@@ -1,0 +1,55 @@
+// This is a single line comment.
+
+/*This is also a comment, but it can span multiple lines.*/    // this is another comment.
+
+/*
+*
+*
+* 
+*  you do not need the atrix but it is common to use it in multi-line comments.
+* 
+* 
+* 
+*/
+
+
+
+//An identifier is just a name.
+// it must begin with a letter, underscore or a dollar sign. 
+//these are all legal identifiers:
+i
+my_variable_name
+v13
+_dumbass
+$str
+
+// Reserved words cannot be used as regular identifiers. These are:
+					
+as	async	await	break	case	catch
+class	const	continue	debugger	default	delete
+do	else	enum	export	extends	false
+finally	for	from	function	get	if
+implements	import	in	instanceof	interface	let
+new	null	of	package	private	protected
+public	return	set	static	super	switch
+this	throw	true	try	typeof	undefined
+var	void	while	with	yield
+
+
+// JavaSscript programs are written using the Unicode character set. 
+//Unicode is basically a giant standardized system for representing text and characters from languages all around the world.
+
+//Think of it as a huge dictionary where every character gets its own unique number.
+
+/*
+| Character | Unicode |
+| --------- | ------- |
+| `A`       | U+0041  |
+| `B`       | U+0042  |
+| `a`       | U+0061  |
+| `1`       | U+0031  |
+| `é`       | U+00E9  |
+| `中`       | U+4E2D  |
+| `😀`      | U+1F600 |
+*/
+
