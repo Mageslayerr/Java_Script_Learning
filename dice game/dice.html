@@ -3,19 +3,33 @@
         <title> Dice Game </title>
     </head>
    <body>
-      <p>The Game is simple: roll the dice.</p>.
-      <p> Which dice would you like to roll? </p>
-      
+      <p>The Game is simple: roll the dice.</p>
+     
+     
+      <p> Which dice would you like to roll:
       <form action="dice.html" method="get">
 
-      <select name="Dice type">
-        <option value="d4">D4</option>
-        <option value="d6">D6</option>
-        <option value="d20">D20</option>
-        <option value="d100">D100</option>
-      </select>
-      <input type="submit" value="Roll Dice">
+     <br />
+     <!-- Dice selection -->
+      
+     <input type="radio" name="diceType" value="d6"> D6
+     <input type="radio" name="diceType" value="d20"> D20
+     <input type="radio" name="diceType" value="d100"> D100
+      </p>
+  
+      
+    </form>
+      
+    <form>
+        <!-- Roll button -->
+         <button type="button" id="rollButton"> Roll Dice </button>
       </form>
-   </body> 
+      <!-- need to have JavaScript know which dice was selected and then roll that dice -->
+      
+
+      <p> Your roll: <span id="rollResult"></span> </p>
+
+    <script src="script.js"></script>
+     </body> 
 
 </html>
