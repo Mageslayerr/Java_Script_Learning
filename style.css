@@ -1,0 +1,4 @@
+/* moving all of the text to the middle of the page */
+body {
+    text-align: center;
+}
