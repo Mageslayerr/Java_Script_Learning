@@ -2,3 +2,34 @@
 body {
     text-align: center;
 }
+/* moving the question and selections lower than the title */
+p {
+    margin-top: 50px;
+}
+/* updating the font size of the title */
+h1 {
+    font-size: 60px;
+}
+p{
+    font-size: 30px;
+}
+
+/*adding dice image to each dice option */
+
+#d6 {
+    background-image: url("images/d6.png");
+}
+
+#d20 {
+    background-image: url("images/d20.png");
+}
+
+/*removing the default radio button and replacing it with a dice image */
+input[type="radio"] {
+    appearance: none;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
